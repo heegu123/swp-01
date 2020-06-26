@@ -15,7 +15,7 @@ def application(environ, start_response):
         sum = ''
         mul = ''
 	error = "Nothing Entered"
-    response_body = html % {'sum':sum, 'mul':mul}
+    response_body = html % {'sum':sum, 'mul':mul, 'error':error}
     start_response('200 OK', [
         ('Content-Type', 'text/html'),
         ('Content-Length', str(len(response_body)))
